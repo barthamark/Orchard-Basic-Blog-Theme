@@ -1,0 +1,70 @@
+﻿@import "variables";
+@import "type";
+@import "mixins";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/grid";
+
+#layout-wrapper {
+    #layout-navigation {
+        background: @basicblog-blue;
+
+        .zone-navigation {
+            /*padding-top: 1.5rem;
+            padding-bottom: 1.5rem;*/
+
+            .widget-navigation {
+                padding: 0;
+                nav {
+                    .menu {
+                        list-style-type: none;
+                        margin: 0;
+
+                        @media @media-sm {
+                            display: inline-block;
+                        }
+
+                        > li {
+                            display: block;
+                            margin-right: 100%;
+
+                            @media @media-sm {
+                                display: inline;
+                                margin-right: 0;
+                            }
+
+                            > a {
+                                font-size: @basicblog-font-size-xxsmall;
+                                float: left;
+                                display: block;
+                                color: @basicblog-white;
+                                background-color: transparent;
+                                padding: 0 1rem 1rem 1rem;
+                                border-radius: unset;
+                                text-transform: uppercase;
+                                .basicblog-font-bold;
+
+                                &:hover, &:active, &:focus {
+                                    text-decoration: none;
+                                }
+
+                                @media @media-sm {
+                                    padding: 0 3rem 0 0;
+                                    margin: 0 1rem 0 0;
+                                }
+
+                                .basicblog-anchor-fadeout-light;
+                            }
+
+                            &.current > a {
+                                background-color: transparent;
+
+                                &:hover, &:active, &:focus {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

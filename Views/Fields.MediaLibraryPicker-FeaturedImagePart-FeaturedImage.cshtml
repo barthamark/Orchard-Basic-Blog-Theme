@@ -1,0 +1,6 @@
+﻿@if (Model.ContentField.FirstMediaUrl != "")
+{
+    <div class="featured-image @Model.ContentItem.ContentType-featured-image">
+        <img src="@Model.ContentField.FirstMediaUrl" alt="@Model.ContentItem.TitlePart.Title" />
+    </div>
+}

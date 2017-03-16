@@ -1,0 +1,45 @@
+﻿@{
+    var summaryContainerClass = "blogpost-summary-main-container";
+    var featuredImageUrl = "";
+    var featuredImagePart = Model.ContentItem.FeaturedImagePart;
+    if (featuredImagePart != null)
+    {
+        var featuredImageField = Model.ContentItem.FeaturedImagePart.FeaturedImage;
+
+        if (featuredImageField != null)
+        {
+            featuredImageUrl = Model.ContentItem.FeaturedImagePart.FeaturedImage.FirstMediaUrl;
+        }
+    }
+    var contentItem = Model.ContentItem as Orchard.ContentManagement.ContentItem;
+}
+
+<div class="blogpost-summary-wrapper">
+    @if (featuredImageUrl != "")
+    {
+        <span class="blogpost-summary-featuredimage-container">
+            <a href="@Url.ItemDisplayUrl(contentItem)">
+                <img src="@featuredImageUrl" alt="@Model.ContentItem.TitlePart.Title" />
+            </a>
+        </span>
+    }
+    else
+    {
+        summaryContainerClass += " blogpost-summary-default-image";
+    }
+    <div class="@summaryContainerClass">
+        <header>
+            @Display(Model.Header)
+
+            <div class="metadata">
+                @Display(Model.Meta)
+            </div>
+        </header>
+        <div class="post-content">
+            @Display(Model.Content)
+        </div>
+        <footer>
+            @Display(Model.Footer)
+        </footer>
+    </div>
+</div>

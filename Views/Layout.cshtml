@@ -1,0 +1,140 @@
+﻿@functions {
+    string CalcuClassify(string[] zoneNames, string classNamePrefix)
+    {
+        var zoneCounter = 0;
+        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : ""; }).ToArray());
+        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
+    }
+}
+
+
+@{
+    Display.Insertions();
+
+    Func<dynamic, dynamic> Zone = x => Display(x);
+
+
+    var asideClass = CalcuClassify(new[] { "AsideFirst", "AsideSecond" }, "aside-");
+    if (HasText(asideClass))
+    {
+        Model.Classes.Add(asideClass);
+    }
+
+    Model.Id = "layout-wrapper";
+    var tag = Tag(Model, "div");
+}
+
+
+@tag.StartElement
+
+@if (Model.Header != null)
+{
+    <header id="layout-header" class="group">
+        <div class="header-container">
+            <div id="header" class="header-row">
+                @Zone(Model.Header)
+            </div>
+        </div>
+    </header>
+}
+
+@if (Model.Navigation != null)
+{
+    <div id="layout-navigation" class="group">
+        <div class="navigation-container">
+            <div class="navigation-row">
+                @Zone(Model.Navigation)
+            </div>
+        </div>
+    </div>
+}
+
+@if (Model.Featured != null)
+{
+    <div id="layout-featured" class="group">
+        <div class="featured-container">
+            <div class="navigation-row">
+                @Zone(Model.Featured)
+            </div>
+        </div>
+    </div>
+}
+
+@if (Model.BeforeMain != null)
+{
+    <div id="layout-before-main" class="group">
+        <div class="before-main-container">
+            <div class="before-main-row">
+                @Zone(Model.BeforeMain)
+            </div>
+        </div>
+    </div>
+}
+
+<div id="layout-main-container">
+    <div id="layout-main" class="group">
+        <div class="main-container">
+            <div class="main-row">
+                <div id="layout-content" class="group">
+                    @if (Model.Messages != null)
+                    {
+                        <div id="messages">
+                            @Zone(Model.Messages)
+                        </div>
+                    }
+                    @if (Model.BeforeContent != null)
+                    {
+                        <div id="before-content">
+                            @Zone(Model.BeforeContent)
+                        </div>
+                    }
+                    @* the model content for the page is in the Content zone @ the default position (nothing, zero, zilch) *@
+                    @if (Model.Content != null)
+                    {
+                        <div id="content" class="group">
+                            @Zone(Model.Content)
+                        </div>
+                    }
+                    @if (Model.AfterContent != null)
+                    {
+                        <div id="after-content">
+                            @Zone(Model.AfterContent)
+                        </div>
+                    }
+                </div>
+                @if (Model.AsideSecond != null)
+                {
+                    <aside id="aside-second" class="aside-second">
+                        @Zone(Model.AsideSecond)
+                    </aside>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.AfterMain != null)
+{
+    <div id="layout-after-main" class="group">
+        <div class="after-main-container">
+            <div class="after-main-row">
+                @Zone(Model.AfterMain)
+            </div>
+        </div>
+    </div>
+}
+
+<div id="layout-footer" class="group">
+    <div class="footer-container">
+        <footer id="footer" class="footer-row">
+            @if (Model.Footer != null)
+            {
+                <div id="footer-sig" class="group">
+                    @Zone(Model.Footer)
+                </div>
+            }
+        </footer>
+    </div>
+</div>
+
+@tag.EndElement

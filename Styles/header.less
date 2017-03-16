@@ -1,0 +1,30 @@
+﻿@import "variables";
+@import "type";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/grid";
+
+#layout-wrapper {
+    #layout-header {
+        background-color: @basicblog-dark;
+
+        #header {
+            .zone-header {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                #branding {
+                    font-size: @basicblog-font-size-xlarge;
+                    margin: 0;
+
+                    a {
+                        color: @basicblog-light;
+                        .basicblog-font-light;
+
+                        &:hover, &:active, &:focus {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

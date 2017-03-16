@@ -1,0 +1,80 @@
+﻿@import "variables";
+@import "type";
+@import "mixins";
+
+.widget
+{
+    padding-bottom: 2rem;
+
+    h1
+    {
+        color: inherit;
+    }
+
+    > header
+    {
+        .basicblog-widget-header;
+    }
+
+    ul
+    {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .tag-cloud
+    {
+        list-style-type: none;
+
+        .tag-cloud-tag
+        {
+            display: inline;
+
+            a
+            {
+                .basicblog-tag;
+            }
+        }
+
+        .tag-cloud-tag-1, .tag-cloud-tag-2
+        {
+            a
+            {
+                font-size: @basicblog-font-size-xxxsmall;
+            }
+        }
+
+        .tag-cloud-tag-3, .tag-cloud-tag-4
+        {
+            a
+            {
+                font-size: @basicblog-font-size-xsmall;
+            }
+        }
+
+        .tag-cloud-tag-5
+        {
+            a
+            {
+                font-size: @basicblog-font-size-normal;
+            }
+        }
+    }
+}
+
+.widget-before-main
+{
+    padding: 0;
+    margin: 4rem 0 0 0;
+
+    .table
+    {
+        margin: 0;
+    }
+
+    @media @media-lg
+    {
+        width: @screen-md-min;
+        margin: 4rem auto 0 auto;
+    }
+}
