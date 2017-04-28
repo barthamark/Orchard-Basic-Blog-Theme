@@ -1,171 +1,67 @@
 <Placement>
+    <!-- Page -->
+    <Match ContentType="Page">
+        <Match Path="~/">
+            <Place Fields_Input-ContentSharing = "-"
+                   Parts_Title = "-"
+                   Parts_Common_Metadata = "-" />
+        </Match>
 
-  
-  <Match ContentType="Page">
-    <Match Path="~/">
-      <Place
-        Fields_Input-ContentSharing = "-"
-        Parts_Title = "-"
-        Parts_Common_Metadata = "-"
-      />
-    </Match>
-    
-    <Match DisplayType="Detail">
-      <Place
-        Parts_Common_Metadata = "-"
-      />
-    </Match>
-  </Match>
-
-  <Match ContentType="Form">
-    <Match DisplayType="Detail">
-      <Place
-        Parts_Common_Metadata = "-"
-      />
-    </Match>
-  </Match>
-  
-  <Match ContentType="Event">
-    <Place
-      Fields_DateTime-Idopont = "-"
-      Fields_DateTime_Summary-Idopont = "-"
-      Parts_Comments_Count = "-"
-      Parts_Common_Metadata="-"
-      Parts_Common_Metadata_Summary="-"
-      Parts_Tags_ShowTags = "-"
-    />
-
-    <Match DisplayType="Summary">
-      <Place
-        Fields_Input-ContentSharing = "-"
-      />
-    </Match>
-  </Match>
-
-  <Match ContentType="Blog">
-    <Place
-      Parts_Common_Metadata="-"
-    />
-  </Match>
-
-  <Match ContentType="Projection">
-    <Place
-      Parts_Common_Metadata="-"
-    />
-  </Match>
-  
-  <Match ContentType="BlogPost">
-    <Place
-      Fields_Boolean-Highlighted = "-"
-      Fields_Text-Notes = "-"
-    />
-
-    <Match DisplayType="Detail">
-      <Place
-        Fields_Input-ContentAuthor = "Meta: 1"
-        Fields_Input-Social = "Content: 9"
-        Fields_Input-ContentSharing = "Content: 9"
-        Fields_MediaLibraryUpload-HeaderImage = "Content: 1"
-        Fields_Enumeration-Status = "-"
-      />
+        <Match DisplayType="Detail">
+            <Place Parts_Common_Metadata = "-" />
+        </Match>
     </Match>
 
-    <Match DisplayType="Summary">
-      <Place
-        Fields_Input-ContentAuthor = "Meta: 1"
-        Fields_MediaLibraryUpload_Summary-HeaderImage = "-"
-        Parts_Comments_Count = "-"
-        Fields_Input-Social = "-"
-        Fields_Input-ContentSharing = "-"
-        Parts_Tags_ShowTags = "-"
-        Fields_Enumeration-Status = "-"
-      />
+    <!-- Form -->
+    <Match ContentType="Form">
+        <Match DisplayType="Detail">
+            <Place Parts_Common_Metadata = "-" />
+        </Match>
     </Match>
 
-    <Match DisplayType="HighlightedSummary">
-      <Place
-        Fields_Input-ContentAuthor = "Meta: 1"
-        Parts_Title_Summary = "Header: 5"
-        Parts_Common_Metadata_Summary = "Meta: 2"
-        Fields_MediaLibraryUpload_Summary-HeaderImage = "-"
-        Parts_Comments_Count = "-"
-        Fields_Input-Social = "-"
-        Fields_Input-ContentSharing = "-"
-        Parts_Tags_ShowTags = "-"
-        Fields_Enumeration-Status = "-"
-      />
+    <!-- Projection -->
+    <Match ContentType="Projection">
+        <Place Parts_Common_Metadata="-" />
     </Match>
 
-    <Match DisplayType="HeaderSummary">
-      <Place
-        Fields_Input-ContentAuthor = "-"
-        Parts_Title_Summary = "Header: 5"
-        Parts_Common_Metadata_Summary = "Meta: 2"
-        Fields_MediaLibraryUpload_Summary-HeaderImage = "-"
-        Parts_Comments_Count = "-"
-        Parts_Common_Body_Summary = "-"
-        Fields_Input-Social = "-"
-        Fields_Input-ContentSharing = "-"
-        Parts_Tags_ShowTags = "-"
-        Fields_Enumeration-Status = "-"
-      />
+    <!-- Blog -->
+    <Match ContentType="Blog">
+        <Place Parts_Common_Metadata="-" />
     </Match>
-    
-    <Match DisplayType="SummaryAdmin">
-      <Place
-        Fields_Enumeration-Status = "Content: 1"
-      />
-    </Match>
-  </Match>
 
+    <!-- Blog Post -->
+    <Match ContentType="BlogPost">
+        <Match DisplayType="Detail">
+            <Place Fields_MediaLibraryUpload-HeaderImage = "Content: 1"
+                   Fields_Enumeration-Status = "-" />
+        </Match>
 
-  <Match DisplayType="SummaryAdmin">
-    <Place
-      Fields_Input-ContentAuthor = "-"
-      Fields_Input-Social = "-"
-      Fields_Input-ContentSharing = "-"
-      />
-  </Match>
-  
-  
-  <Match ContentType="User">
-    <Match Path="~/Profile*">
-      <Place
-        Parts_Roles_UserRoles_Edit="-"
-        Fields_MediaLibraryUpload_Edit-ProfilePicture="Content: 1"
-        Fields_Input_Edit-FullName="Content: 2"
-        Fields_Input_Edit-University="Content: 3"
-        Fields_Input_Edit-StudentPartnerRole="Content: 4"
-        Fields_Input_Edit-Email="Content: 5"
-        Fields_Input_Edit-Facebook="Content: 6"
-        Fields_Input_Edit-Twitter="Content: 7"
-        Fields_Input_Edit-LinkedIn="Content: 8"
-        Fields_Boolean_Edit-IsStudentPartner="-"
-        Fields_Common_Text_Edit-Bio="Content: 9"
-        Fields_Input-Facebook="-"
-        Fields_Input-Twitter="-"
-        Fields_Input-LinkedIn="-"
-        Fields_Input-Email="-"
-        Fields_Input-University="-"
-        Fields_Input-FullName="-"
-        Fields_Input-StudentPartnerRole="-"
-        Fields_Boolean-IsStudentPartner="-"
-        Fields_MediaLibraryUpload-ProfilePicture="-"
-      />
+        <Match DisplayType="Summary">
+            <Place
+                Fields_MediaLibraryUpload_Summary-HeaderImage = "-"
+                Parts_Comments_Count = "-" />
+        </Match>
+
+        <Match DisplayType="TitleSummary">
+            <Place Parts_Title_Summary = "Header: 5"
+                   Parts_Common_Metadata_Summary = "Meta: 2"
+                   Parts_Comments_Count = "-"
+                   Parts_Common_Body_Summary = "-"
+                   Parts_Tags_ShowTags = "-" />
+        </Match>
     </Match>
-  </Match>
 
     <!-- Featured Image -->
     <Match DisplayType="Detail">
-        <Place Fields_MediaLibraryPicker-FeaturedImage="Content:1" />
+        <Place Fields_MediaLibraryPicker-FeaturedImage = "Content:1" />
     </Match>
-    
+
     <!-- Content Sharing -->
-    <Place Fields_Input_Edit-ContentSharing="-"
-           Fields_Input-ContentSharing="-" />
+    <Place Fields_Input_Edit-ContentSharing = "-"
+           Fields_Input-ContentSharing = "-" />
 
     <Match DisplayType="Detail">
-        <Place Fields_Input-ContentSharing="Content:10" />
+        <Place Fields_Input-ContentSharing = "Content:10" />
     </Match>
 
 </Placement>

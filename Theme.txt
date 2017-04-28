@@ -4,4 +4,5 @@ Website: https://github.com/barthamark/basic-blog-theme
 Description: Basic blog theme for Orchard CMS.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
-Dependencies: UrlAlternates
+Dependencies: UrlAlternates, Orchard.Fields
+Zones: Header, Navigation, Featured, BeforeMain, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, Footer

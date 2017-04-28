@@ -56,6 +56,10 @@ body {
         }
     }
 
+    .page-title {
+        margin-top: 0;
+    }
+
     .projection-page, .widget-projection-widget {
         > ul {
             padding: 0;
@@ -380,12 +384,15 @@ body {
             }
         }
     }
+
     /* Footer */
     #footer {
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
+        background-color: @basicblog-dark;
+        border-top: 0.5rem solid @basicblog-gray;
 
         #footer-quad {
             margin: 0;
@@ -434,7 +441,6 @@ body {
 
                             a {
                                 color: @basicblog-light;
-                                /*font-weight: normal;*/
                                 &:hover, &:active, &:focus {
                                     text-decoration: none;
                                 }
@@ -458,8 +464,6 @@ body {
                 }
             }
 
-            background-color: @basicblog-dark;
-            border-top: 0.5rem solid @basicblog-gray;
             height: 20rem;
             color: @basicblog-light;
 

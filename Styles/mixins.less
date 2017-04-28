@@ -43,17 +43,11 @@
 
 .basicblog-tag
 {
-    //.basicblog-image-fadeout;
-
     color: @basicblog-white;
     background-color: @basicblog-blue;
     font-size: @basicblog-font-size-xxsmall;
     padding: 0.1rem 0.5rem;
 
-    //&:hover, &:active, &:focus
-    //{
-    //    text-decoration: none;
-    //}    
     &:hover, &:focus, &:active
     {
         color: #fff;
@@ -80,7 +74,6 @@
     input, textarea
     {
         margin: 1rem 0;
-        /*display: table-cell;*/
         width: 100%;
         font-size: @basicblog-font-size-xsmall;
     }
@@ -112,17 +105,17 @@
 
 .basicblog-widget-header
 {
-        > h1
-        {
-            font-size: @basicblog-font-size-normal;
-            text-transform: uppercase;
-            color: @basicblog-dark;
-            .basicblog-font-bold;
-            border-bottom: 0.1rem solid @basicblog-light;
-            margin: 0 0 1rem 0;
-            padding: 0 0 0.5rem 0;
-            
-        }
+    > h1
+    {
+        font-size: @basicblog-font-size-normal;
+        text-transform: uppercase;
+        color: @basicblog-dark;
+        .basicblog-font-bold;
+        border-bottom: 0.1rem solid @basicblog-light;
+        margin: 0 0 1rem 0;
+        padding: 0 0 0.5rem 0;
+        
+    }
 }
 
 .basicblog-summary
@@ -133,7 +126,7 @@
         font-size: @basicblog-font-size-xxsmall;
     }
     
-    p:last-of-type
+    .post-content > p:last-of-type
     {
         a
         {

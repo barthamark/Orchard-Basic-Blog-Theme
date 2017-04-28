@@ -527,7 +527,6 @@ h6 {
 .basicblog-form input,
 .basicblog-form textarea {
   margin: 1rem 0;
-  /*display: table-cell;*/
   width: 100%;
   font-size: 0.8em;
 }
@@ -563,7 +562,7 @@ h6 {
   margin: 0;
   font-size: 0.7em;
 }
-.basicblog-summary p:last-of-type a {
+.basicblog-summary .post-content > p:last-of-type a {
   display: none;
 }
 .basicblog-image-fadeout {
@@ -1308,6 +1307,9 @@ body {
 #layout-wrapper .content-item > header h1 {
   margin-top: 0;
 }
+#layout-wrapper .page-title {
+  margin-top: 0;
+}
 #layout-wrapper .projection-page > ul,
 #layout-wrapper .widget-projection-widget > ul {
   padding: 0;
@@ -1340,7 +1342,6 @@ body {
 #layout-wrapper fieldset input,
 #layout-wrapper fieldset textarea {
   margin: 1rem 0;
-  /*display: table-cell;*/
   width: 100%;
   font-size: 0.8em;
 }
@@ -1430,7 +1431,7 @@ body {
   margin: 0;
   font-size: 0.7em;
 }
-#layout-wrapper .blogpost-summary-wrapper p:last-of-type a {
+#layout-wrapper .blogpost-summary-wrapper .post-content > p:last-of-type a {
   display: none;
 }
 @media only screen and (min-width: 68.6em) {
@@ -1475,7 +1476,7 @@ body {
   margin: 0;
   font-size: 0.7em;
 }
-#layout-wrapper .content-item-summary p:last-of-type a {
+#layout-wrapper .content-item-summary .post-content > p:last-of-type a {
   display: none;
 }
 #layout-wrapper .content-item-summary .metadata {
@@ -1677,6 +1678,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #333333;
+  border-top: 0.5rem solid #6B6B6B;
 }
 #layout-wrapper #footer #footer-quad {
   margin: 0;
@@ -1685,8 +1688,6 @@ body {
   margin: 0;
 }
 #layout-wrapper #footer .zone-footer {
-  background-color: #333333;
-  border-top: 0.5rem solid #6B6B6B;
   height: 20rem;
   color: #E5E5E5;
 }
@@ -1730,7 +1731,6 @@ body {
 }
 #layout-wrapper #footer .zone-footer .zone-footer-inner .footer-menu ol li a {
   color: #E5E5E5;
-  /*font-weight: normal;*/
 }
 #layout-wrapper #footer .zone-footer .zone-footer-inner .footer-menu ol li a:hover,
 #layout-wrapper #footer .zone-footer .zone-footer-inner .footer-menu ol li a:active,
