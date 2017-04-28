@@ -1,15 +1,14 @@
 # Basic Blog Theme for Orchard CMS
 
-Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) created by [Lombiq](https://lombiq.com). 
+Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) created by [Lombiq](https://lombiq.com).
 
 ## Some notes about the theme
 
-* The theme uses some fields as placeholders to display various contents like social sharing icons - see the instructions below.
+* The theme uses some fields as placeholders to display various contents like social sharing icons.
 * This theme doesn't support multi-level menu yet.
-* Some zones has been removed from the layout which are the following: `AsideFirst`, `TripelFirst`, `TripelSecond`, `TripelThird`, `FooterQuadFirst`, `FooterQuadSecond`, `FooterQuadThird`, `FooterQuadFourth`.
+* Some zones have been removed from the layout which are the following: `AsideFirst`, `TripelFirst`, `TripelSecond`, `TripelThird`, `FooterQuadFirst`, `FooterQuadSecond`, `FooterQuadThird`, `FooterQuadFourth`.
 * Featured zone has a green background.
 * Blog post content item summary display shape has been overriden to be able to display the feature image.
-* 
 
 ## How to use the theme
 
@@ -25,7 +24,7 @@ Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme 
 2. Add an `InputField` to this part and give `ContentSharing` as a name.
 3. Attach this part on any content type.
 
-Furthermore, you can add `Shape__ContentSharing` shape anywhere on the site to display the same icons making it possible to share that page.
+Furthermore, you can add the `Shape__ContentSharing` shape anywhere on the site (e.g. shape element on a layout) to display the same icons making it possible to share that page.
 
 ## Display summaries with only the title and published date
 
