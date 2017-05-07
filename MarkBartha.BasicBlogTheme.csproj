@@ -186,6 +186,10 @@
       <Project>{9916839c-39fc-4ceb-a5af-89ca7e87119f}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\site.less" />
@@ -273,6 +277,8 @@
     <Content Include="Views\Layout.cshtml" />
     <Content Include="LICENSE.md" />
     <Content Include="README.md" />
+    <Content Include="Views\Widget.Wrapper.cshtml" />
+    <Content Include="Views\Branding.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
