@@ -1335,7 +1335,6 @@ table th[class*="col-"] {
 ***************************************************************/
 /* Colors */
 /* Media queries */
-/* Navigation vars */
 /* Setting bootstrap vars */
 /* Font size vars */
 h1,
@@ -1793,7 +1792,6 @@ h5 {
 h6 {
   font-size: 1.15em;
 }
-/*@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/structure";*/
 /* Common
    Common imports needed in every PGBBT LESS file.
 ***************************************************************/
@@ -1879,7 +1877,7 @@ h6 {
   margin: 0 2rem 0 0;
   border: 0;
 }
-.basicblog-widget-header > h1 {
+.basicblog-widget-header > h3 {
   font-size: 1em;
   text-transform: uppercase;
   color: #333333;
@@ -2726,7 +2724,7 @@ ol {
 .widget h1 {
   color: inherit;
 }
-.widget > header > h1 {
+.widget > header > h3 {
   font-size: 1em;
   text-transform: uppercase;
   color: #333333;
@@ -2875,7 +2873,6 @@ ol {
   color: #FFFFFF;
   background-color: #008385;
   display: flex;
-  /*float: none;*/
 }
 #layout-wrapper #layout-featured .zone-featured .widget {
   padding: 0;
