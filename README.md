@@ -1,6 +1,6 @@
 # Basic Blog Theme for Orchard CMS
 
-Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) created by [Lombiq](https://lombiq.com).
+Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) as base theme which was created by [Lombiq](https://lombiq.com).
 
 ## Some notes about the theme
 
@@ -10,7 +10,7 @@ Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme 
 * Featured zone has a green background.
 * Blog post content item summary display shape has been overriden to be able to display the feature image.
 
-## How to use the theme
+## How to use
 
 ### Adding feature images to blog posts
 
@@ -26,7 +26,7 @@ Simple and clean blog theme for Orchard CMS created by Márk Bartha. This theme 
 
 Furthermore, you can add the `Shape__ContentSharing` shape anywhere on the site (e.g. shape element on a layout) to display the same icons making it possible to share that page.
 
-## Display summaries with only the title and published date
+### Display summaries with only the title and published date
 
 You need to use the `TitleSummary` display type. Here's one example on how to achieve that.
 
