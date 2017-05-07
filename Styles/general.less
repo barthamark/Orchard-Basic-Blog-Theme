@@ -9,12 +9,6 @@
 ***************************************************************/
 html {
     position: relative;
-    min-height: 100%;
-    padding-bottom: 200px;
-
-    @media @media-lg {
-        padding-bottom: 150px;
-    }
 }
 
 body {
@@ -384,15 +378,11 @@ body {
             }
         }
     }
-
     /* Footer */
     #footer {
-        position: absolute;
-        left: 0;
-        bottom: 0;
         width: 100%;
-        background-color: @basicblog-dark;
         border-top: 0.5rem solid @basicblog-gray;
+        display:block;
 
         #footer-quad {
             margin: 0;
@@ -400,6 +390,7 @@ body {
 
         #footer-sig {
             margin: 0;
+            background-color: @basicblog-dark;
         }
 
         .zone-footer {
@@ -441,6 +432,7 @@ body {
 
                             a {
                                 color: @basicblog-light;
+
                                 &:hover, &:active, &:focus {
                                     text-decoration: none;
                                 }

@@ -1272,13 +1272,6 @@ h6 {
 ***************************************************************/
 html {
   position: relative;
-  min-height: 100%;
-  padding-bottom: 200px;
-}
-@media only screen and (min-width: 68.6em) {
-  html {
-    padding-bottom: 150px;
-  }
 }
 body {
   font-family: "open_sansregular", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
@@ -1673,18 +1666,16 @@ body {
   margin: 0;
 }
 #layout-wrapper #footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  background-color: #333333;
   border-top: 0.5rem solid #6B6B6B;
+  display: block;
 }
 #layout-wrapper #footer #footer-quad {
   margin: 0;
 }
 #layout-wrapper #footer #footer-sig {
   margin: 0;
+  background-color: #333333;
 }
 #layout-wrapper #footer .zone-footer {
   height: 20rem;
