@@ -33,7 +33,9 @@
     <Match ContentType="BlogPost">
         <Match DisplayType="Detail">
             <Place Fields_MediaLibraryUpload-HeaderImage = "Content: 1"
-                   Fields_Enumeration-Status = "-" />
+                   Fields_Enumeration-Status = "-"
+                   Parts_ListOfComments="/AfterContent:10.2"
+                   Parts_CommentForm="/AfterContent:10.3" />
         </Match>
 
         <Match DisplayType="Summary">
