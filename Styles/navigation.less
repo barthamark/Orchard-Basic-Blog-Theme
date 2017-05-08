@@ -28,6 +28,10 @@
                                 list-style-type: none;
                                 margin: 0;
 
+                                @media @media-sm {
+                                    float: right;
+                                }
+
                                 > li {
                                     display: table-row;
                                     width: auto;
@@ -86,15 +90,18 @@
 
                                     > li {
                                         display: table-cell;
-
-                                        img {
-                                        }
                                     }
                                 }
                             }
+                        }
 
-                            @media @media-sm {
-                                float: right;
+                        &:first-of-type {
+                            nav {
+                                .menu {
+                                    @media @media-sm {
+                                        float: none;
+                                    }
+                                }
                             }
                         }
                     }

@@ -2844,6 +2844,11 @@ ol {
   list-style-type: none;
   margin: 0;
 }
+@media only screen and (min-width: 50em) {
+  #layout-wrapper #layout-navigation .navigation-container .navigation-row .zone-navigation .widget-menu-widget nav .menu {
+    float: right;
+  }
+}
 #layout-wrapper #layout-navigation .navigation-container .navigation-row .zone-navigation .widget-menu-widget nav .menu > li {
   display: table-row;
   width: auto;
@@ -2908,8 +2913,8 @@ ol {
   display: table-cell;
 }
 @media only screen and (min-width: 50em) {
-  #layout-wrapper #layout-navigation .navigation-container .navigation-row .zone-navigation .widget-menu-widget:last-of-type {
-    float: right;
+  #layout-wrapper #layout-navigation .navigation-container .navigation-row .zone-navigation .widget-menu-widget:first-of-type nav .menu {
+    float: none;
   }
 }
 #layout-wrapper #layout-featured .zone-featured {
