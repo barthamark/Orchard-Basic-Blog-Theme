@@ -7,59 +7,94 @@
     #layout-navigation {
         background: @basicblog-color-primary;
 
-        .zone-navigation {
-            /*padding-top: 1.5rem;
-            padding-bottom: 1.5rem;*/
+        .navigation-container {
+            .navigation-row {
+                .zone-navigation {
+                    float: none;
+                    display: table;
 
-            .widget-navigation {
-                padding: 0;
-                nav {
-                    .menu {
-                        list-style-type: none;
-                        margin: 0;
+                    .widget-menu-widget {
+                        padding: 0;
+                        vertical-align: middle;
+                        display: table-row;
 
                         @media @media-sm {
-                            display: inline-block;
+                            display: table-cell;
                         }
 
-                        > li {
-                            display: block;
-                            margin-right: 100%;
+                        nav {
+                            .menu {
+                                display: table;
+                                list-style-type: none;
+                                margin: 0;
+
+                                > li {
+                                    display: table-row;
+                                    width: auto;
+
+                                    @media @media-sm {
+                                        display: table-cell;
+                                    }
+
+                                    > span > p {
+                                        margin: 0;
+                                    }
+
+                                    > a {
+                                        font-size: @basicblog-font-size-xxsmall;
+                                        float: left;
+                                        display: block;
+                                        color: @basicblog-color-text-inverz;
+                                        background-color: transparent;
+                                        padding: 0 1rem 1rem 1rem;
+                                        border-radius: unset;
+                                        text-transform: uppercase;
+                                        .basicblog-font-bold;
+
+                                        &:hover, &:active, &:focus {
+                                            text-decoration: none;
+                                        }
+
+                                        @media @media-sm {
+                                            padding: 0 3rem 0 0;
+                                            margin: 0 1rem 0 0;
+                                            width: auto;
+                                        }
+
+                                        .basicblog-anchor-fadeout-light;
+                                    }
+
+                                    &.current > a {
+                                        background-color: transparent;
+
+                                        &:hover, &:active, &:focus {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            nav {
+                                .menu {
+                                    padding: 0 1rem 1rem 1rem;
+
+                                    @media @media-sm {
+                                        padding: 0;
+                                    }
+
+                                    > li {
+                                        display: table-cell;
+
+                                        img {
+                                        }
+                                    }
+                                }
+                            }
 
                             @media @media-sm {
-                                display: inline;
-                                margin-right: 0;
-                            }
-
-                            > a {
-                                font-size: @basicblog-font-size-xxsmall;
-                                float: left;
-                                display: block;
-                                color: @basicblog-color-text-inverz;
-                                background-color: transparent;
-                                padding: 0 1rem 1rem 1rem;
-                                border-radius: unset;
-                                text-transform: uppercase;
-                                .basicblog-font-bold;
-
-                                &:hover, &:active, &:focus {
-                                    text-decoration: none;
-                                }
-
-                                @media @media-sm {
-                                    padding: 0 3rem 0 0;
-                                    margin: 0 1rem 0 0;
-                                }
-
-                                .basicblog-anchor-fadeout-light;
-                            }
-
-                            &.current > a {
-                                background-color: transparent;
-
-                                &:hover, &:active, &:focus {
-                                    text-decoration: none;
-                                }
+                                float: right;
                             }
                         }
                     }
