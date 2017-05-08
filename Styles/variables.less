@@ -33,24 +33,17 @@
 
 /* Media queries */
 
-@screen-xs-min: 30em; // ~480px
-@screen-sm-min: 47.95em; // ~768px
-@screen-md-min: 57.8em; // ~940px in Chrome, more in FF...
-@screen-lg-min: 68.6em; // ~1100px
-@screen-xl-min: 87.4em; // ~1400px
-@screen-xxl-min: 99.9em; // ~1600px
+@screen-sm-min: 50em; // ~768px
+@screen-md-min: 62em; // ~992px in Chrome, more in FF...
+@screen-lg-min: 75em; // ~1200px
 
 
 // The tilde is needed so the quotes won't be printed
 
-@media-xs: ~"only screen and (min-width: @{screen-xs-min})";
-@media-xs-max: ~"only screen and (max-width: @{screen-xs-min})";
 @media-sm: ~"only screen and (min-width: @{screen-sm-min})";
 @media-sm-max: ~"only screen and (max-width: @{screen-sm-min})";
 @media-md: ~"only screen and (min-width: @{screen-md-min})";
 @media-lg: ~"only screen and (min-width: @{screen-lg-min})";
-@media-xl: ~"only screen and (min-width: @{screen-xl-min})";
-@media-xxl: ~"only screen and (min-width: @{screen-xxl-min})";
 
 
 /* Setting bootstrap vars */
