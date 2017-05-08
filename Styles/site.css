@@ -1805,7 +1805,7 @@ h6 {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.1rem solid transparent;
+  border: 0.2rem solid #008385;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   font-size: 0.8em;
@@ -1816,12 +1816,50 @@ h6 {
   -o-user-select: none;
   user-select: none;
   font-family: inherit;
+  text-decoration: none;
 }
 .basicblog-button:hover,
 .basicblog-button:focus,
 .basicblog-button:active {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #005152;
+  border: 0.2rem solid #005152;
+  text-decoration: none;
+}
+.basicblog-button-light {
+  color: #FFFFFF;
+  background-color: #008385;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 0.2rem solid #008385;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  font-size: 0.8em;
+  line-height: 1.42857143;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "open_sansregular", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif;
+  background: #FFFFFF;
+  color: #008385;
+}
+.basicblog-button-light:hover,
+.basicblog-button-light:focus,
+.basicblog-button-light:active {
+  color: #FFFFFF;
+  background-color: #005152;
+  border: 0.2rem solid #005152;
+  text-decoration: none;
 }
 .basicblog-header-anchor {
   color: #333333;
@@ -2050,23 +2088,6 @@ body {
 @media (min-width: 68.6em) {
   #layout-wrapper #layout-featured .featured-container {
     width: 1170px;
-  }
-}
-#layout-wrapper #layout-featured .featured-container .featured-row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-#layout-wrapper #layout-featured .featured-container .featured-row .zone-featured {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 48em) {
-  #layout-wrapper #layout-featured .featured-container .featured-row .zone-featured {
-    width: 100%;
   }
 }
 #layout-wrapper #layout-before-main {
@@ -2977,7 +2998,7 @@ body {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.1rem solid transparent;
+  border: 0.2rem solid #008385;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   font-size: 0.8em;
@@ -2988,12 +3009,15 @@ body {
   -o-user-select: none;
   user-select: none;
   font-family: inherit;
+  text-decoration: none;
 }
 #layout-wrapper button:hover,
 #layout-wrapper button:focus,
 #layout-wrapper button:active {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #005152;
+  border: 0.2rem solid #005152;
+  text-decoration: none;
 }
 #layout-wrapper header > h1 > a,
 #layout-wrapper header > h2 > a {
@@ -3179,7 +3203,7 @@ body {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.1rem solid transparent;
+  border: 0.2rem solid #008385;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   font-size: 0.8em;
@@ -3190,12 +3214,15 @@ body {
   -o-user-select: none;
   user-select: none;
   font-family: inherit;
+  text-decoration: none;
 }
 #layout-wrapper .button:hover,
 #layout-wrapper .button:focus,
 #layout-wrapper .button:active {
-  color: #fff;
+  color: #FFFFFF;
   background-color: #005152;
+  border: 0.2rem solid #005152;
+  text-decoration: none;
 }
 #layout-wrapper .social {
   margin: 4rem 0 4rem;

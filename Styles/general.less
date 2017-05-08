@@ -14,7 +14,7 @@ html {
 body {
     .basicblog-font-normal;
     font-size: @basicblog-font-size-base;
-    background: @basicblog-white;
+    background: @basicblog-color-background;
 }
 
 #layout-wrapper {
@@ -93,7 +93,7 @@ body {
     header {
         > h1, > h2 {
             > a {
-                color: @basicblog-dark;
+                color: @basicblog-color-text;
 
                 &:hover, &:active, &:focus {
                     text-decoration: none;
@@ -193,21 +193,21 @@ body {
     }
 
     .comment-count {
-        border-bottom: 0.1rem solid @basicblog-light;
+        border-bottom: 0.1rem solid @basicblog-color-secondary;
         font-size: @basicblog-font-size-normal;
         margin: 3rem 0 1rem 0;
     }
 
     .metadata {
         font-size: @basicblog-font-size-xxsmall;
-        border: 1 0 solid @basicblog-light;
+        border: 1 0 solid @basicblog-color-secondary;
         padding: 0.5rem 0;
 
         .content-author {
             .basicblog-metadata-item;
 
             a {
-                color: @basicblog-dark;
+                color: @basicblog-color-text;
                 text-decoration: none;
                 .basicblog-font-bold;
 
@@ -236,7 +236,7 @@ body {
 
             header {
                 span {
-                    color: @basicblog-gray;
+                    color: @basicblog-color-gray;
                     font-size: @basicblog-font-size-xsmall;
                 }
             }
@@ -333,9 +333,9 @@ body {
         }
 
         .message-Information {
-            background-color: @basicblog-lightgreen;
+            background-color: @basicblog-color-information;
             border: 0;
-            color: @basicblog-dark;
+            color: @basicblog-color-text;
         }
 
         .message-Error {
@@ -343,9 +343,9 @@ body {
         }
 
         .message-Warning {
-            background-color: @basicblog-indigo;
+            background-color: @basicblog-color-warning;
             border: 0;
-            color: @basicblog-light;
+            color: @basicblog-color-secondary;
         }
     }
 
@@ -381,7 +381,7 @@ body {
     /* Footer */
     #footer {
         width: 100%;
-        border-top: 0.5rem solid @basicblog-gray;
+        border-top: 0.5rem solid @basicblog-color-gray;
         display:block;
 
         #footer-quad {
@@ -390,7 +390,7 @@ body {
 
         #footer-sig {
             margin: 0;
-            background-color: @basicblog-dark;
+            background-color: @basicblog-color-text;
         }
 
         .zone-footer {
@@ -431,7 +431,7 @@ body {
                             margin: 0 0 0 2rem;
 
                             a {
-                                color: @basicblog-light;
+                                color: @basicblog-color-secondary;
 
                                 &:hover, &:active, &:focus {
                                     text-decoration: none;
@@ -457,7 +457,7 @@ body {
             }
 
             height: 20rem;
-            color: @basicblog-light;
+            color: @basicblog-color-secondary;
 
             @media @media-lg {
                 height: 15rem;

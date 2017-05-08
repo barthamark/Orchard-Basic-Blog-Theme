@@ -3,8 +3,8 @@
 
 .basicblog-button
 {
-    color: @basicblog-white;
-    background-color: @basicblog-blue;
+    color: @basicblog-color-text-inverz;
+    background-color: @basicblog-color-button;
     display: inline-block;
     margin-bottom: 0;
     font-weight: normal;
@@ -12,7 +12,7 @@
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    border: 0.1rem solid transparent;
+    border: 0.2rem solid @basicblog-color-button;
     white-space: nowrap;
     padding: 0.5rem 1rem;
     font-size: @basicblog-font-size-xsmall;
@@ -23,17 +23,28 @@
     -o-user-select: none;
     user-select: none;
     font-family: inherit;
+    text-decoration: none;
 
     &:hover, &:focus, &:active
     {
-        color: #fff;
-        background-color: @basicblog-darkblue;
+        color: @basicblog-color-text-inverz;
+        background-color: @basicblog-color-button-hover;
+        border: 0.2rem solid @basicblog-color-button-hover;
+        text-decoration: none;
     }
+}
+
+.basicblog-button-light {
+    .basicblog-button;
+    .basicblog-font-bold;
+
+    background: @basicblog-color-background;
+    color: @basicblog-color-button;
 }
 
 .basicblog-header-anchor
 {
-    color: @basicblog-dark;
+    color: @basicblog-color-text;
 
     &:hover, &:active, &:focus
     {
@@ -43,15 +54,15 @@
 
 .basicblog-tag
 {
-    color: @basicblog-white;
-    background-color: @basicblog-blue;
+    color: @basicblog-color-text-inverz;
+    background-color: @basicblog-color-primary;
     font-size: @basicblog-font-size-xxsmall;
     padding: 0.1rem 0.5rem;
 
     &:hover, &:focus, &:active
     {
         color: #fff;
-        background-color: @basicblog-darkblue;
+        background-color: @basicblog-color-button-hover;
         text-decoration: none;
     }
 }
@@ -59,8 +70,8 @@
 .basicblog-errorbox
 {
     border: 0;
-    background-color: @basicblog-orange;
-    color: @basicblog-light;
+    background-color: @basicblog-color-error;
+    color: @basicblog-color-secondary;
 }
 
 .basicblog-form
@@ -109,9 +120,9 @@
     {
         font-size: @basicblog-font-size-normal;
         text-transform: uppercase;
-        color: @basicblog-dark;
+        color: @basicblog-color-text;
         .basicblog-font-bold;
-        border-bottom: 0.1rem solid @basicblog-light;
+        border-bottom: 0.1rem solid @basicblog-color-secondary;
         margin: 0 0 1rem 0;
         padding: 0 0 0.5rem 0;
         
@@ -175,7 +186,7 @@
     
     &:hover
     {
-        color: @basicblog-dark;
+        color: @basicblog-color-text;
     }
 }
 
