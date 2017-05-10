@@ -279,6 +279,7 @@
     <Content Include="README.md" />
     <Content Include="Views\Widget.Wrapper.cshtml" />
     <Content Include="Views\Branding.cshtml" />
+    <Content Include="Views\User.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

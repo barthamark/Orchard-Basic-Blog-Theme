@@ -18,17 +18,8 @@ body {
 }
 
 #layout-wrapper {
-
     ul {
         padding: 0;
-    }
-
-    p {
-        font-size: @basicblog-font-size-small;
-    }
-
-    address {
-        font-size: @basicblog-font-size-small;
     }
 
     .content-item {
@@ -382,106 +373,67 @@ body {
     #footer {
         width: 100%;
         border-top: 0.5rem solid @basicblog-color-gray;
-        display:block;
-
-        #footer-quad {
-            margin: 0;
-        }
+        display: block;
 
         #footer-sig {
             margin: 0;
             background-color: @basicblog-color-text;
-        }
 
-        .zone-footer {
-            .zone-footer-inner {
-                margin: 1rem auto;
-                position: relative;
+            .zone-footer {
+                padding: 2rem;
+                color: @basicblog-color-secondary;
+                text-align: center;
+                height: auto;
+                font-size: @basicblog-font-size-xsmall;
 
-                @media @media-lg {
-                    width: @screen-md-min;
-                    padding: 0;
-                }
+                a {
+                    color: @basicblog-color-text-inverz;
 
-                .footer-sitename {
-                    font-size: @basicblog-font-size-normal;
-
-                    @media @media-lg {
-                        display: inline;
+                    &:hover, &:focus, &:active {
+                        text-decoration: underline;
                     }
                 }
 
-                .footer-menu {
-                    font-size: @basicblog-font-size-xxsmall;
-                    margin: 1rem 0 0 0;
+                p {
+                    text-align: center;
+                }
 
-                    @media @media-lg {
-                        display: inline;
-                        position: absolute;
-                        right: 0;
-                        margin: 0;
-                    }
+                .menu {
+                    li {
+                        padding-bottom: 1rem;
 
-                    ol {
-                        list-style-type: none;
-                        display: inline;
-
-                        li {
+                        @media @media-sm {
                             display: inline;
-                            margin: 0 0 0 2rem;
+                            padding-bottom: 0;
 
-                            a {
-                                color: @basicblog-color-secondary;
-
-                                &:hover, &:active, &:focus {
-                                    text-decoration: none;
-                                }
+                            &:before {
+                                content: "|";
+                                padding: 0 1rem;
                             }
+                        }
+                    }
 
-                            &:first-of-type {
-                                margin: 0;
+                    .first {
+                        @media @media-sm {
+                            &:before {
+                                content: "";
+                                padding: 0 1rem;
                             }
                         }
                     }
                 }
 
-                .footer-rights {
-                    font-size: @basicblog-font-size-xxsmall;
-                    margin: 1rem 0 0 0;
+                .widget {
+                    padding-bottom: 1rem;
+                }
 
-                    @media @media-lg {
-                        position: absolute;
-                        right: 0;
+                .credits {
+                    margin: 0 0 1rem 0;
+                    width: auto;
+
+                    .poweredby {
+                        margin: 1rem 0 0 0;
                     }
-                }
-            }
-
-            height: 20rem;
-            color: @basicblog-color-secondary;
-
-            @media @media-lg {
-                height: 15rem;
-            }
-
-            a {
-                color: @link-color;
-                font-weight: bold;
-            }
-
-            .credits {
-                margin: 1rem auto;
-                position: relative;
-
-                @media @media-lg {
-                    width: @screen-md-min;
-                    padding: 2.5rem 0 0 0;
-                    text-align: right;
-                }
-
-                .poweredby {
-                    font-size: @basicblog-font-size-xxxsmall;
-                    margin: 1rem 0 0 0;
-                    font-style: italic;
                 }
             }
         }
