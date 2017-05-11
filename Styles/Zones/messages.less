@@ -1,0 +1,34 @@
+﻿@import "../variables";
+@import "../mixins";
+
+#layout-wrapper {
+    .zone-messages {
+        padding: 4rem 1rem 0;
+
+        @media @media-lg {
+            padding: 4rem 0 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .message {
+            border-radius: 0;
+        }
+
+        .message-Information {
+            background-color: @basicblog-color-information;
+            border: 0;
+            color: @basicblog-color-text;
+        }
+
+        .message-Error {
+            .basicblog-errorbox;
+        }
+
+        .message-Warning {
+            background-color: @basicblog-color-warning;
+            border: 0;
+            color: @basicblog-color-secondary;
+        }
+    }
+}

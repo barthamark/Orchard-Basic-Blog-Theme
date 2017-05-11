@@ -1,22 +1,6 @@
 ﻿[
   {
-    "outputFile": "Styles/fonts.css",
-    "inputFile": "Styles/fonts.less"
-  },
-  {
-    "outputFile": "Styles/site-bartha.css",
-    "inputFile": "Styles/site-bartha.less"
-  },
-  {
     "outputFile": "Styles/site.css",
     "inputFile": "Styles/site.less"
-  },
-  {
-    "outputFile": "Styles/general.css",
-    "inputFile": "Styles/general.less"
-  },
-  {
-    "outputFile": "Styles/type.css",
-    "inputFile": "Styles/site-bartha.less"
   }
 ]

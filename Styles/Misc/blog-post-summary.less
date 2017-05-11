@@ -1,0 +1,48 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.blogpost-summary-wrapper {
+    .basicblog-summary;
+
+    @media @media-lg {
+        display: flex;
+    }
+
+    .blogpost-summary-featuredimage-container {
+        img {
+            width: 100%;
+        }
+
+        @media @media-lg {
+            position: relative;
+            width: 45%;
+            overflow: hidden;
+            display: block;
+            margin: 2.5rem 0 0 0;
+
+            img {
+                padding: 0 2rem 0 0;
+                position: absolute;
+            }
+        }
+    }
+
+    .blogpost-summary-main-container, blogpost-summary-main-container-wide {
+        @media @media-lg {
+            display: block;
+            min-height: 20rem;
+        }
+    }
+
+    .blogpost-summary-main-container {
+        @media @media-lg {
+            width: 55%;
+        }
+    }
+
+    .blogpost-summary-main-container-wide {
+        @media @media-lg {
+            width: 100%;
+        }
+    }
+}

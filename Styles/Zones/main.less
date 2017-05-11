@@ -1,0 +1,58 @@
+﻿@import "../variables";
+@import "../mixins";
+
+#layout-wrapper {
+    #layout-main-container {
+        #layout-main {
+            #layout-content {
+                .zone-content, .zone-after-content {
+                    background-color: @basicblog-color-background;
+
+
+                    .content-item {
+                        ol {
+                        }
+
+                        ul {
+                            padding-left: 3rem;
+                        }
+
+                        .content-items {
+                            padding: 0;
+                        }
+
+                        > header {
+                            h1 {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    .page-title {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        #aside-second {
+            .widget-projection-widget {
+                .content-item {
+                    padding: 0;
+
+                    > header {
+                        h2 {
+                            font-size: @basicblog-font-size-small;
+                        }
+                    }
+                }
+            }
+
+            .widget-newest-post-headers {
+                .metadata {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

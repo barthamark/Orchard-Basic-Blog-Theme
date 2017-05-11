@@ -101,65 +101,11 @@
     <Content Include="Images\Social\Profile-Facebook.svg" />
     <Content Include="Images\Social\Profile-Twitter.svg" />
     <Content Include="Images\Social\Profile-LinkedIn.svg" />
-    <Content Include="Styles\header - Copy.css">
-      <DependentUpon>featured.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\header - Copy.min.css">
-      <DependentUpon>header - Copy.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\mixins.min.css">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\header.min.css">
-      <DependentUpon>header.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\widgets.css">
-      <DependentUpon>widgets.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\widgets.min.css">
-      <DependentUpon>widgets.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.min.css">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\content.css">
-      <DependentUpon>content.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\content.min.css">
-      <DependentUpon>content.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\general.min.css">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.css">
-      <DependentUpon>type.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\type.min.css">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
     </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -198,51 +144,20 @@
     <Content Include="Styles\general.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\general.css.map">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\variables.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\type.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\type.css.map">
-      <DependentUpon>type.css</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
-    <Content Include="Styles\content.less" />
-    <Content Include="Styles\content.css.map">
-      <DependentUpon>content.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\navigation.less" />
-    <Content Include="Styles\navigation.css.map">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\widgets.less" />
-    <Content Include="Styles\widgets.css.map">
-      <DependentUpon>widgets.css</DependentUpon>
-    </Content>
+    <Content Include="Styles\Zones\main.less" />
+    <Content Include="Styles\Zones\navigation.less" />
     <Content Include="Styles\mixins.less" />
-    <Content Include="Styles\mixins.css.map">
-      <DependentUpon>mixins.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\header.less" />
-    <Content Include="Styles\header.css.map">
-      <DependentUpon>header.css</DependentUpon>
-    </Content>
+    <Content Include="Styles\Zones\header.less" />
     <Content Include="Images\settings.svg" />
     <Content Include="Images\drafts.svg" />
     <Content Include="Images\logout.svg" />
@@ -269,10 +184,7 @@
     <Content Include="Views\Fields.Input-SocialPart-ContentSharing.cshtml" />
     <Content Include="Views\Shape-ContentSharing.cshtml" />
     <Content Include="Views\BadgeOfHonor.cshtml" />
-    <Content Include="Styles\featured.less" />
-    <Content Include="Styles\header - Copy.css.map">
-      <DependentUpon>header - Copy.css</DependentUpon>
-    </Content>
+    <Content Include="Styles\Zones\featured.less" />
     <Content Include="Styles\structure.less" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="LICENSE.md" />
@@ -280,6 +192,12 @@
     <Content Include="Views\Widget.Wrapper.cshtml" />
     <Content Include="Views\Branding.cshtml" />
     <Content Include="Views\User.cshtml" />
+    <Content Include="Styles\Zones\footer.less" />
+    <Content Include="Styles\Misc\header-info.less" />
+    <Content Include="Styles\Misc\blog-post-summary.less" />
+    <Content Include="Styles\Zones\messages.less" />
+    <Content Include="Styles\Misc\social.less" />
+    <Content Include="Styles\Misc\featured-image.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
