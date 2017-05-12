@@ -1,8 +1,7 @@
 ﻿@import "variables";
 @import "type";
 
-.basicblog-button
-{
+.basicblog-button {
     color: @basicblog-color-text-inverz;
     background-color: @basicblog-color-button;
     display: inline-block;
@@ -15,7 +14,7 @@
     border: 0.2rem solid @basicblog-color-button;
     white-space: nowrap;
     padding: 0.5rem 1rem;
-    font-size: @basicblog-font-size-xsmall;
+    /*font-size: @basicblog-font-size-xsmall;*/
     line-height: 1.42857143;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -25,8 +24,7 @@
     font-family: inherit;
     text-decoration: none;
 
-    &:hover, &:focus, &:active
-    {
+    &:hover, &:focus, &:active {
         color: @basicblog-color-text-inverz;
         background-color: @basicblog-color-button-hover;
         border: 0.2rem solid @basicblog-color-button-hover;
@@ -37,68 +35,55 @@
 .basicblog-button-light {
     .basicblog-button;
     .basicblog-font-bold;
-
     background: @basicblog-color-background;
     color: @basicblog-color-button;
 }
 
-.basicblog-header-anchor
-{
+.basicblog-header-anchor {
     color: @basicblog-color-text;
 
-    &:hover, &:active, &:focus
-    {
+    &:hover, &:active, &:focus {
         text-decoration: none;
     }
 }
 
-.basicblog-tag
-{
+.basicblog-tag {
     color: @basicblog-color-text-inverz;
     background-color: @basicblog-color-primary;
-    font-size: @basicblog-font-size-xxsmall;
+    font-size: @basicblog-font-size-xsmall;
     padding: 0.1rem 0.5rem;
 
-    &:hover, &:focus, &:active
-    {
+    &:hover, &:focus, &:active {
         color: #fff;
         background-color: @basicblog-color-button-hover;
         text-decoration: none;
     }
 }
 
-.basicblog-errorbox
-{
+.basicblog-errorbox {
     border: 0;
     background-color: @basicblog-color-error;
     color: @basicblog-color-secondary;
 }
 
-.basicblog-form
-{
-    label
-    {
+.basicblog-form {
+    label {
         display: table-cell;
-        font-size: @basicblog-font-size-small;
     }
 
-    input, textarea
-    {
+    input, textarea {
         margin: 1rem 0;
         width: 100%;
-        font-size: @basicblog-font-size-xsmall;
     }
 
-    input[type= checkbox]
-    {
+    input[type= checkbox] {
         width: auto;
         float: left;
         margin: 0.5rem 1rem 0.5rem 0;
     }
 }
 
-.basicblog-navigation-image
-{
+.basicblog-navigation-image {
     background-repeat: no-repeat;
     background-size: 1.7rem;
     width: 1.7rem;
@@ -107,91 +92,69 @@
     display: inline;
 }
 
-.basicblog-metadata-item
-{
+.basicblog-metadata-item {
     padding: 0;
     margin: 0 2rem 0 0;
     border: 0;
 }
 
-.basicblog-widget-header
-{
-    > h3
-    {
-        font-size: @basicblog-font-size-normal;
+.basicblog-widget-header {
+    > h3 {
         text-transform: uppercase;
         color: @basicblog-color-text;
         .basicblog-font-bold;
         border-bottom: 0.1rem solid @basicblog-color-secondary;
         margin: 0 0 1rem 0;
         padding: 0 0 0.5rem 0;
-        
     }
 }
 
-.basicblog-summary
-{
-    p
-    {
+.basicblog-summary {
+    p {
         margin: 0;
-        font-size: @basicblog-font-size-xxsmall;
-    }
-    
-    .post-content > p:last-of-type
-    {
-        a
-        {
-            display: none;
-        }
     }
 }
 
-.basicblog-image-fadeout
-{
+.basicblog-image-fadeout {
     -webkit-transition: opacity 0.1s ease-in-out;
     -moz-transition: opacity 0.1s ease-in-out;
     -ms-transition: opacity 0.1s ease-in-out;
     -o-transition: opacity 0.1s ease-in-out;
     transition: opacity 0.1s ease-in-out;
 
-    &:hover
-    {
+    &:hover {
         zoom: 1;
         filter: alpha(opacity=80);
         opacity: 0.8;
     }
 }
 
-.basicblog-anchor-fadeout-black
-{
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    
-    &:hover
-    {
+.basicblog-anchor-fadeout-black {
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+    &:hover {
         color: black;
     }
 }
 
-.basicblog-anchor-fadeout-light
-{
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    
-    &:hover
-    {
+.basicblog-anchor-fadeout-light {
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+    &:hover {
         color: @basicblog-color-text;
     }
 }
 
 .blog-layout-container {
-        width: 100%;
-        float: left;
-        margin: 0;
+    width: 100%;
+    float: left;
+    margin: 0;
 }

@@ -10,16 +10,22 @@
                 padding-top: 2rem;
                 padding-bottom: 2rem;
 
-                #branding {
-                    font-size: @basicblog-font-size-xlarge;
-                    margin: 0;
+                .widget-Branding {
+                    padding-bottom: 0;
+                }
 
-                    a {
-                        color: @basicblog-color-secondary;
-                        .basicblog-font-light;
+                #branding, .branding, .widget-Branding {
+                    h1, h2 {
+                        font-size: @basicblog-font-size-xxlarge;
+                        margin: 0;
 
-                        &:hover, &:active, &:focus {
-                            text-decoration: none;
+                        a {
+                            color: @basicblog-color-secondary;
+                            .basicblog-font-light;
+
+                            &:hover, &:active, &:focus {
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
