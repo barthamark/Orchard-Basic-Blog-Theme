@@ -297,12 +297,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #008385;
+  color: #046380;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #008385;
+  color: #046380;
   text-decoration: underline;
 }
 a:focus {
@@ -1792,7 +1792,7 @@ h6 {
 ***************************************************************/
 .basicblog-button {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1800,7 +1800,7 @@ h6 {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.2rem solid #008385;
+  border: 0.2rem solid #046380;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   /*font-size: @basicblog-font-size-xsmall;*/
@@ -1817,13 +1817,13 @@ h6 {
 .basicblog-button:focus,
 .basicblog-button:active {
   color: #FFFFFF;
-  background-color: #005152;
-  border: 0.2rem solid #005152;
+  background-color: #034D63;
+  border: 0.2rem solid #034D63;
   text-decoration: none;
 }
 .basicblog-button-light {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1831,7 +1831,7 @@ h6 {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.2rem solid #008385;
+  border: 0.2rem solid #046380;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   /*font-size: @basicblog-font-size-xsmall;*/
@@ -1845,14 +1845,14 @@ h6 {
   text-decoration: none;
   font-family: 'LatoHeavy', sans-serif;
   background: #FFFFFF;
-  color: #008385;
+  color: #046380;
 }
 .basicblog-button-light:hover,
 .basicblog-button-light:focus,
 .basicblog-button-light:active {
   color: #FFFFFF;
-  background-color: #005152;
-  border: 0.2rem solid #005152;
+  background-color: #034D63;
+  border: 0.2rem solid #034D63;
   text-decoration: none;
 }
 .basicblog-header-anchor {
@@ -1865,7 +1865,7 @@ h6 {
 }
 .basicblog-tag {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   font-size: 0.75em;
   padding: 0.1rem 0.5rem;
 }
@@ -1873,7 +1873,7 @@ h6 {
 .basicblog-tag:focus,
 .basicblog-tag:active {
   color: #fff;
-  background-color: #005152;
+  background-color: #034D63;
   text-decoration: none;
 }
 .basicblog-errorbox {
@@ -1915,8 +1915,16 @@ h6 {
   margin: 0 0 1rem 0;
   padding: 0 0 0.5rem 0;
 }
+.basicblog-summary {
+  padding-bottom: 4rem;
+}
 .basicblog-summary p {
   margin: 0;
+}
+@media only screen and (min-width: 75em) {
+  .basicblog-summary {
+    padding-bottom: 0;
+  }
 }
 .basicblog-image-fadeout {
   -webkit-transition: opacity 0.1s ease-in-out;
@@ -2329,7 +2337,7 @@ body {
   padding: 6px 12px;
   line-height: 1.6;
   text-decoration: none;
-  color: #008385;
+  color: #046380;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -2349,7 +2357,7 @@ body {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #008385;
+  color: #046380;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -2425,7 +2433,7 @@ body {
   padding: 6px 12px;
   line-height: 1.6;
   text-decoration: none;
-  color: #008385;
+  color: #046380;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -2445,7 +2453,7 @@ body {
 .pager > li > span:hover,
 .pager > li > a:focus,
 .pager > li > span:focus {
-  color: #008385;
+  color: #046380;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -2786,7 +2794,7 @@ strong {
 }
 button {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2794,7 +2802,7 @@ button {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.2rem solid #008385;
+  border: 0.2rem solid #046380;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   /*font-size: @basicblog-font-size-xsmall;*/
@@ -2811,8 +2819,8 @@ button:hover,
 button:focus,
 button:active {
   color: #FFFFFF;
-  background-color: #005152;
-  border: 0.2rem solid #005152;
+  background-color: #034D63;
+  border: 0.2rem solid #034D63;
   text-decoration: none;
 }
 header > h1 > a,
@@ -2851,8 +2859,16 @@ iframe {
   font-size: 0.75em;
   color: gray;
 }
+.content-item-summary {
+  padding-bottom: 4rem;
+}
 .content-item-summary p {
   margin: 0;
+}
+@media only screen and (min-width: 75em) {
+  .content-item-summary {
+    padding-bottom: 0;
+  }
 }
 .content-item-summary .metadata {
   padding: 0;
@@ -2866,7 +2882,7 @@ iframe {
 }
 .tags a {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   font-size: 0.75em;
   padding: 0.1rem 0.5rem;
 }
@@ -2874,7 +2890,7 @@ iframe {
 .tags a:focus,
 .tags a:active {
   color: #fff;
-  background-color: #005152;
+  background-color: #034D63;
   text-decoration: none;
 }
 .comment-count {
@@ -2931,7 +2947,7 @@ iframe {
 }
 .button {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2939,7 +2955,7 @@ iframe {
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
-  border: 0.2rem solid #008385;
+  border: 0.2rem solid #046380;
   white-space: nowrap;
   padding: 0.5rem 1rem;
   /*font-size: @basicblog-font-size-xsmall;*/
@@ -2956,8 +2972,8 @@ iframe {
 .button:focus,
 .button:active {
   color: #FFFFFF;
-  background-color: #005152;
-  border: 0.2rem solid #005152;
+  background-color: #034D63;
+  border: 0.2rem solid #034D63;
   text-decoration: none;
 }
 .validation-summary-errors {
@@ -2995,7 +3011,7 @@ iframe {
 }
 .widget .tag-cloud .tag-cloud-tag a {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   font-size: 0.75em;
   padding: 0.1rem 0.5rem;
 }
@@ -3003,7 +3019,7 @@ iframe {
 .widget .tag-cloud .tag-cloud-tag a:focus,
 .widget .tag-cloud .tag-cloud-tag a:active {
   color: #fff;
-  background-color: #005152;
+  background-color: #034D63;
   text-decoration: none;
 }
 .widget-before-main {
@@ -3068,7 +3084,7 @@ iframe {
   text-decoration: none;
 }
 #layout-wrapper #layout-navigation {
-  background: #008385;
+  background: #046380;
 }
 #layout-wrapper #layout-navigation .navigation-container .navigation-row .zone-navigation {
   float: none;
@@ -3163,7 +3179,7 @@ iframe {
 }
 #layout-wrapper #layout-featured .zone-featured {
   color: #FFFFFF;
-  background-color: #008385;
+  background-color: #046380;
   display: flex;
 }
 #layout-wrapper #layout-featured .zone-featured .widget {
@@ -3282,8 +3298,16 @@ iframe {
 #layout-wrapper #footer #footer-sig .zone-footer .credits .poweredby {
   margin: 1rem 0 0 0;
 }
+.blogpost-summary-wrapper {
+  padding-bottom: 4rem;
+}
 .blogpost-summary-wrapper p {
   margin: 0;
+}
+@media only screen and (min-width: 75em) {
+  .blogpost-summary-wrapper {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 75em) {
   .blogpost-summary-wrapper {
