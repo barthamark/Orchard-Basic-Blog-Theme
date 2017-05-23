@@ -96,8 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fonts\Lato\SIL Open Font License.txt" />
-    <Content Include="Images\rss.svg" />
-    <Content Include="Images\search.svg" />
     <Content Include="Images\Social\Profile-Email.svg" />
     <Content Include="Images\Social\Profile-Facebook.svg" />
     <Content Include="Images\Social\Profile-Twitter.svg" />
@@ -159,17 +157,12 @@
     <Content Include="Styles\Zones\navigation.less" />
     <Content Include="Styles\mixins.less" />
     <Content Include="Styles\Zones\header.less" />
-    <Content Include="Images\settings.svg" />
-    <Content Include="Images\drafts.svg" />
-    <Content Include="Images\logout.svg" />
-    <Content Include="Images\dropdown.svg" />
     <Content Include="Images\Social\Email.svg" />
     <Content Include="Images\Social\Facebook.svg" />
     <Content Include="Images\Social\GooglePlus.svg" />
     <Content Include="Images\Social\license.md" />
     <Content Include="Images\Social\LinkedIn.svg" />
     <Content Include="Images\Social\Twitter.svg" />
-    <Content Include="Images\user.svg" />
     <Content Include="Views\Elements\Column.cshtml" />
     <Content Include="Views\Elements\Grid.cshtml" />
     <Content Include="packages.config" />
