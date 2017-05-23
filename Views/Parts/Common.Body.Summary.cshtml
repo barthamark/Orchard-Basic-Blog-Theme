@@ -1,16 +1,6 @@
 ﻿@{ 
     Orchard.ContentManagement.ContentItem contentItem = Model.ContentPart.ContentItem;
     string bodyHtml = Model.Html.ToString();
-    var shortBody = Html
-        .Excerpt(bodyHtml, 160)
-        .ToString()
-        .Replace(Environment.NewLine, "</p>" + Environment.NewLine + "<p>");
-    var firstParagraphEndIndex = shortBody.IndexOf(Environment.NewLine);
-    if (firstParagraphEndIndex > 0)
-    {
-        shortBody = shortBody.Substring(0, firstParagraphEndIndex);
-    }
-    var body = new HtmlString(shortBody);
 }
 
-<p>@body</p>
+@Display.Shape__ShortSummary(Text: bodyHtml)

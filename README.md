@@ -2,7 +2,7 @@
 
 Simple and clean blog theme for Orchard CMS created by Márk Bartha. 
 
-This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) as base theme which was created by [Lombiq](https://lombiq.com).
+This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme) as a base theme which was created by [Lombiq](https://lombiq.com).
 
 ## Some notes about the theme
 
@@ -11,10 +11,10 @@ This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lomb
 * Some zones have been removed from the layout which are the following: `AsideFirst`, `TripelFirst`, `TripelSecond`, `TripelThird`, `FooterQuadFirst`, `FooterQuadSecond`, `FooterQuadThird`, `FooterQuadFourth`.
 * Branding shape is not displayed. A widget must be used for branding.
 * Widgets in the Navigation zone (possibly the MenuWidgets) are pulled right except the first one which is pulled left.
-* HTML menu items with images are supported (ie. styled) in the Navigation zone.
+* HTML menu items with images can be used in the Navigation zone.
 * Featured zone has a background with the primary color.
-* Blog post content item summary display shape has been overriden to be able to display the feature image.
-* User shape containing the log in link or the user name is also hidden.
+* Blog post content item summary display shape has been overridden to be able to display the feature image.
+* User shape containing the username or the link to the log on page is also hidden.
 
 ## How to use some of the features
 
@@ -24,7 +24,7 @@ This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lomb
 2. Add a `MediaLibraryPickerField` to this part and give `FeaturedImage` as a name.
 3. Attach this part on the `BlogPost` content type or any content type you'd like.
 
-### Adding social content sharing icons
+### Adding social content-sharing icons
 
 1. Create a `SocialPart` on the Orchard Dashboard.
 2. Add an `InputField` to this part and give `ContentSharing` as a name.
@@ -34,7 +34,7 @@ Furthermore, you can add the `Shape__ContentSharing` shape anywhere on the site 
 
 ### Display summaries with only the title and published date
 
-You need to use the `TitleSummary` display type. Here's one example on how to achieve that.
+You need to use the `TitleSummary` display type. Here's one example of how to achieve that.
 
 1. Go to the Queries page on the Orchard Dashboard.
 2. Create a Query and add the filters you want. Add a new layout with an unordered list and set `TitleSummary` to the display type field.
@@ -48,3 +48,11 @@ HTML menu items are styled and can be used to display various images like social
 1. Go to the Navigation page on the Dashboard.
 2. Create a new Menu and add the HTML menu items with the icons.
 3. Go to the Widgets page and create a MenuWidget after the main menu.
+
+## Ad-hoc shapes
+
+There are a few ad-hoc shapes added to the theme that can be used from other shape overrides or you can just display it using the shape element in a Layout.
+
+* `Shape__ContentSharing`: displays content-sharing icons that will make the user able to share the current page where the shape is displayed.
+* `Shape__ShortSummary` and `Shape__LongSummary`: shortens a given HTML text (Text dynamic property is required). It's useful if you want to display the shortened text of the BodyPart or a TextField containing HTML markup. The shorter one is displaying about 160 characters and only displays the first paragraph. The longer one is displaying about 500 characters.
+* `Shape__ContentCreatedDateLocalized`: displays the localized creation date of the given content (it tries to get the content from the ContentItem dynamic property or the ContentPart property if not found). Optionally you can pass a custom date format using the CustomFormat property, otherwise, the `MMMM dd, yyyy` format will be used.

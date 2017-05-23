@@ -1,0 +1,21 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.Core.Common.Models
+
+@{
+    var contentItem = Model.ContentItem as ContentItem;
+    var contentPart = Model.ContentPart as ContentPart;
+    if (contentItem == null && contentPart != null)
+    {
+        contentItem = contentPart.ContentItem;
+    }
+
+    var createdDateUtc = contentItem != null ?
+        contentItem.As<CommonPart>().CreatedUtc :
+        null;
+    var customFormat = (Model.CustomFormat as string) ?? "MMMM dd, yyyy";
+}
+
+@if (contentItem != null)
+{
+    @Display.DateTime(DateTimeUtc: createdDateUtc, CustomFormat: T(customFormat))
+}

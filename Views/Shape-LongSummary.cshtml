@@ -1,0 +1,6 @@
+﻿@{ 
+    var text = Model.Text as string;
+    var htmlText = !string.IsNullOrEmpty(text) ? Html.CreateHtmlSummary(text, 500) : new HtmlString("");
+}
+
+<p>@htmlText</p>

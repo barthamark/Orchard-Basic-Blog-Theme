@@ -119,6 +119,7 @@
     <Content Include="Images\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\SummaryHtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
@@ -212,6 +213,9 @@
     <Content Include="Fonts\Lato\Lato-Thin.ttf" />
     <Content Include="Fonts\Lato\Lato-ThinItalic.ttf" />
     <Content Include="Views\Parts\Common.Body.Summary.cshtml" />
+    <Content Include="Views\Shape-ShortSummary.cshtml" />
+    <Content Include="Views\Shape-LongSummary.cshtml" />
+    <Content Include="Views\Shape-ContentCreatedDateLocalized.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
