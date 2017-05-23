@@ -8,11 +8,13 @@
                 .zone-content, .zone-after-content {
                     background-color: @basicblog-color-background;
 
-                    .content-item {
-                        ol {
-                        }
+                    ul, ol {
+                        padding: 0;
+                    }
 
-                        ul {
+                    .content-item {
+
+                        ul, ol {
                             padding-left: 3rem;
                         }
 
@@ -29,6 +31,12 @@
 
                     .page-title {
                         margin-top: 0;
+                    }
+
+                    .projection-page {
+                        ul, ol {
+                            padding-left: 0;
+                        }
                     }
                 }
             }
