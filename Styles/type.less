@@ -5,6 +5,7 @@
 @basicblog-font-size-base: 1.6rem;
 @font-family-sans-serif: sans-serif;
 @line-height-base: 1.6;
+@line-height-p: @line-height-base + .15;
 
 
 @font-face {
@@ -87,4 +88,9 @@ h5, h6
     font-size: @basicblog-font-size-small;
 
     .basicblog-font-bold;
+}
+
+p {
+    text-align: left;
+    line-height: @line-height-p;
 }
