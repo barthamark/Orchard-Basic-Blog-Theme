@@ -2,20 +2,22 @@
 @using Orchard.Core.Common.Models
 
 @{
+    var createdUtc = Model.CreatedUtc as DateTime?;
     var contentItem = Model.ContentItem as ContentItem;
     var contentPart = Model.ContentPart as ContentPart;
-    if (contentItem == null && contentPart != null)
+    if (createdUtc == null && contentItem == null && contentPart != null)
     {
         contentItem = contentPart.ContentItem;
     }
+    if (createdUtc == null && contentItem != null)
+    {
+        createdUtc = contentItem.As<CommonPart>().CreatedUtc;
+    }
 
-    var createdDateUtc = contentItem != null ?
-        contentItem.As<CommonPart>().CreatedUtc :
-        null;
     var customFormat = (Model.CustomFormat as string) ?? "MMMM dd, yyyy";
 }
 
-@if (contentItem != null)
+@if (createdUtc != null)
 {
-    @Display.DateTime(DateTimeUtc: createdDateUtc, CustomFormat: T(customFormat))
+    @Display.DateTime(DateTimeUtc: createdUtc, CustomFormat: T(customFormat))
 }
