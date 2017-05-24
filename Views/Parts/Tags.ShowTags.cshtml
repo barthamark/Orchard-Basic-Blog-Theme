@@ -1,0 +1,28 @@
+﻿@using System.Linq
+
+@{
+    var tagsHtml = new List<IHtmlString>();
+
+    foreach (var tag in Model.Tags)
+    {
+        if (tagsHtml.Any())
+        {
+            tagsHtml.Add(new HtmlString(", "));
+        }
+
+        tagsHtml.Add(Html.ActionLink((string)tag.TagName, "Search", "Home", new { area = "Orchard.Tags", tagName = (string)tag.TagName }, new { }));
+    }
+
+    var tags = Model.Tags as IEnumerable<dynamic>;
+}
+@if (tags != null && tags.Any())
+{
+    <span class="tags">
+        @foreach (var tag in tags)
+        { 
+            <span class="tag tag-default">
+                @Html.ActionLink((string)tag.TagName, "Search", "Home", new { area = "Orchard.Tags", tagName = (string)tag.TagName }, new { })
+            </span>
+        }
+    </span>
+}

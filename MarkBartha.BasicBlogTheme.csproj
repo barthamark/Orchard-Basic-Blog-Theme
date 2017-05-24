@@ -172,7 +172,7 @@
     <Content Include="Views\Zone-Navigation.cshtml" />
     <Content Include="Views\Parts\Title.Summary.cshtml" />
     <Content Include="Views\Parts\Common.Metadata.cshtml" />
-    <Content Include="Views\Parts\Common.Metadata.Summary.cshtml" />
+    <None Include="Views\Parts\Common.Metadata.Summary.cshtml" />
     <Content Include="Views\Content-BlogPost.Summary.cshtml" />
     <Content Include="Views\Zone-Header.cshtml" />
     <Content Include="Views\Fields.MediaLibraryPicker-FeaturedImagePart-FeaturedImage.cshtml" />
@@ -216,6 +216,7 @@
     <Content Include="Views\Shape-ShortSummary.cshtml" />
     <Content Include="Views\Shape-LongSummary.cshtml" />
     <Content Include="Views\Shape-ContentCreatedDateLocalized.cshtml" />
+    <Content Include="Views\Parts\Tags.ShowTags.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
