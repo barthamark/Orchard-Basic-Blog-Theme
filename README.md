@@ -16,6 +16,10 @@ This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lomb
 * Blog post content item summary display shape has been overridden to be able to display the feature image.
 * User shape containing the username or the link to the log on page is also hidden.
 
+## Initialize the theme with recipes
+
+There is a recipe in the Recipes folder of the theme that can be imported in order to create FeaturedImage and Social content parts. It will also attach these parts to the BlogPost content type. You can import it using the ImportExport module (import the *Recipes/BasicBlogThemeParts.recipe.xml* file) or you can go to the Recipes tab on the Modules page on the Dashboard and execute the *Basic Blog Theme - Parts* recipe.
+
 ## How to use some of the features
 
 ### Adding featured images to blog posts
