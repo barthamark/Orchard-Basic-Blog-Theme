@@ -27,6 +27,23 @@
                                 margin-top: 0;
                             }
                         }
+
+                        .pager {
+                            padding-left: 0;
+
+                            > li {
+                                > span, > a {
+                                    border: 0;
+                                    border-radius: 0;
+                                    font-weight: bold;
+
+                                    &:hover, &:active {
+                                        background-color: transparent;
+                                        color: @basicblog-color-link-hover;
+                                    }
+                                }
+                            }
+                        }
                     }
 
                     .page-title {
