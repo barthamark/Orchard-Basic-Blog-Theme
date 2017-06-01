@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fonts\Lato\SIL Open Font License.txt" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\Social\Profile-Email.svg" />
     <Content Include="Images\Social\Profile-Facebook.svg" />
     <Content Include="Images\Social\Profile-Twitter.svg" />
