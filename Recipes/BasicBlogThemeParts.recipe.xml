@@ -18,10 +18,10 @@
       </BlogPost>
     </Types>
     <Parts>
-      <FeaturedImagePart ContentPartSettings.Attachable="True">
+      <FeaturedImagePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Placeholder part for the Featured Image Media Library Picker Field.">
         <FeaturedImage.MediaLibraryPickerField DisplayName="FeaturedImage" MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="False" />
       </FeaturedImagePart>
-      <SocialPart ContentPartSettings.Attachable="True" ContentPartLayoutSettings.Placeable="False">
+      <SocialPart ContentPartSettings.Attachable="True" ContentPartLayoutSettings.Placeable="False" ContentPartSettings.Description="Placeholder part for the Content Sharing Input Field.">
         <ContentSharing.InputField DisplayName="ContentSharing" InputFieldSettings.Type="Text" InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.MaxLength="0" />
       </SocialPart>
     </Parts>
