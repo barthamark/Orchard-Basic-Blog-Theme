@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Exported from Orchard-->
+<Orchard>
+  <Recipe>
+    <Name>Basic Blog Theme - Parts</Name>
+    <Description>Creates reusable Featured Image and Content Sharing content parts. Also attaches them to the BlogPost content type.</Description>
+    <Author>Mark Bartha</Author>
+    <WebSite>http://markbartha.com</WebSite>
+    <Category>Default</Category>
+    <Tags>blog</Tags>
+    <Version>1.0</Version>
+  </Recipe>
+  <ContentDefinition>
+    <Types>
+      <BlogPost>
+        <FeaturedImagePart />
+        <SocialPart />
+      </BlogPost>
+    </Types>
+    <Parts>
+      <FeaturedImagePart ContentPartSettings.Attachable="True">
+        <FeaturedImage.MediaLibraryPickerField DisplayName="FeaturedImage" MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="False" />
+      </FeaturedImagePart>
+      <SocialPart ContentPartSettings.Attachable="True" ContentPartLayoutSettings.Placeable="False">
+        <ContentSharing.InputField DisplayName="ContentSharing" InputFieldSettings.Type="Text" InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.MaxLength="0" />
+      </SocialPart>
+    </Parts>
+  </ContentDefinition>
+</Orchard>

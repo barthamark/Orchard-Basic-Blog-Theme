@@ -100,6 +100,7 @@
     <Content Include="Images\Social\Profile-Facebook.svg" />
     <Content Include="Images\Social\Profile-Twitter.svg" />
     <Content Include="Images\Social\Profile-LinkedIn.svg" />
+    <Content Include="Recipes\BasicBlogThemeParts.recipe.xml" />
     <Content Include="Styles\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
