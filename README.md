@@ -20,6 +20,8 @@ This theme is using the [Pretty Good Orchard Base Theme](https://github.com/Lomb
 
 There is a recipe in the Recipes folder of the theme that can be imported in order to create FeaturedImage and Social content parts. It will also attach these parts to the BlogPost content type. You can import it using the ImportExport module (import the *Recipes/BasicBlogThemeParts.recipe.xml* file) or you can go to the Recipes tab on the Modules page on the Dashboard and execute the *Basic Blog Theme - Parts* recipe.
 
+If you are using this theme on DotNest you need to import this recipe manually using the ImportExport module.
+
 ## How to use some of the features
 
 ### Adding featured images to blog posts
