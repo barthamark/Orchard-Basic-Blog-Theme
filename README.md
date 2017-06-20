@@ -34,7 +34,7 @@ There is a recipe in the Recipes folder of the theme that can be imported in ord
 2. Add an `InputField` to this part and give `ContentSharing` as a name.
 3. Attach this part on any content type.
 
-Furthermore, you can add the `Shape__ContentSharing` shape anywhere on the site (e.g. shape element on a layout) to display the same icons making it possible to share that page.
+Furthermore, you can add the `BasicBlog__ContentSharing` shape anywhere on the site (e.g. shape element on a layout) to display the same icons making it possible to share that page.
 
 ### Display summaries with only the title and published date
 
@@ -57,6 +57,6 @@ HTML menu items are styled and can be used to display various images like social
 
 There are a few ad-hoc shapes added to the theme that can be used from other shape overrides or you can just display it using the shape element in a Layout.
 
-* `Shape__ContentSharing`: displays content-sharing icons that will make the user able to share the current page where the shape is displayed.
-* `Shape__ShortSummary` and `Shape__LongSummary`: shortens a given HTML text (Text dynamic property is required). It's useful if you want to display the shortened text of the BodyPart or a TextField containing HTML markup. The shorter one is displaying about 160 characters and only displays the first paragraph. The longer one is displaying about 300 characters.
-* `Shape__ContentCreatedDateLocalized`: displays the localized creation date of the given content (it tries to get the date from the CreatedUtc property first, if it is not set then the content from the ContentItem property finally the ContentPart property). Optionally you can pass a custom date format using the CustomFormat property, otherwise, the `MMMM dd, yyyy` format will be used.
+* `BasicBlog__ContentSharing`: displays content-sharing icons that will make the user able to share the current page where the shape is displayed.
+* `BasicBlog__ShortSummary` and `BasicBlog__LongSummary`: shortens a given HTML text (Text dynamic property is required). It's useful if you want to display the shortened text of the BodyPart or a TextField containing HTML markup. The shorter one is displaying about 160 characters and only displays the first paragraph. The longer one is displaying about 300 characters.
+* `BasicBlog__ContentCreatedDateLocalized`: displays the localized creation date of the given content (it tries to get the date from the CreatedUtc property first, if it is not set then the content from the ContentItem property finally the ContentPart property). Optionally you can pass a custom date format using the CustomFormat property, otherwise, the `MMMM dd, yyyy` format will be used.

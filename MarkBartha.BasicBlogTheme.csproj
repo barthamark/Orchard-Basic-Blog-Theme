@@ -177,7 +177,7 @@
     <Content Include="Views\Zone-Header.cshtml" />
     <Content Include="Views\Fields.MediaLibraryPicker-FeaturedImagePart-FeaturedImage.cshtml" />
     <Content Include="Views\Fields.Input-SocialPart-ContentSharing.cshtml" />
-    <Content Include="Views\Shape-ContentSharing.cshtml" />
+    <Content Include="Views\BasicBlog-ContentSharing.cshtml" />
     <Content Include="Views\BadgeOfHonor.cshtml" />
     <Content Include="Styles\Zones\featured.less" />
     <Content Include="Styles\structure.less" />
@@ -213,9 +213,9 @@
     <Content Include="Fonts\Lato\Lato-Thin.ttf" />
     <Content Include="Fonts\Lato\Lato-ThinItalic.ttf" />
     <Content Include="Views\Parts\Common.Body.Summary.cshtml" />
-    <Content Include="Views\Shape-ShortSummary.cshtml" />
-    <Content Include="Views\Shape-LongSummary.cshtml" />
-    <Content Include="Views\Shape-ContentCreatedDateLocalized.cshtml" />
+    <Content Include="Views\BasicBlog-ShortSummary.cshtml" />
+    <Content Include="Views\BasicBlog-LongSummary.cshtml" />
+    <Content Include="Views\BasicBlog-ContentCreatedDateLocalized.cshtml" />
     <Content Include="Views\Parts\Tags.ShowTags.cshtml" />
   </ItemGroup>
   <ItemGroup />
