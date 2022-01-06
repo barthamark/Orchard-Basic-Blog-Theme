@@ -150,7 +150,7 @@
     <Content Include="Styles\type.less" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
@@ -166,13 +166,13 @@
     <Content Include="Images\Social\Twitter.svg" />
     <Content Include="Views\Elements\Column.cshtml" />
     <Content Include="Views\Elements\Grid.cshtml" />
-    <Content Include="packages.config" />
+    <None Include="packages.config" />
     <Content Include="Views\Content.Summary.cshtml" />
     <Content Include="Views\Parts\Layout.cshtml" />
     <Content Include="Views\Zone-Navigation.cshtml" />
     <Content Include="Views\Parts\Title.Summary.cshtml" />
     <Content Include="Views\Parts\Common.Metadata.cshtml" />
-    <None Include="Views\Parts\Common.Metadata.Summary.cshtml" />
+    <Content Include="Views\Parts\Common.Metadata.Summary.cshtml" />
     <Content Include="Views\Content-BlogPost.Summary.cshtml" />
     <Content Include="Views\Zone-Header.cshtml" />
     <Content Include="Views\Fields.MediaLibraryPicker-FeaturedImagePart-FeaturedImage.cshtml" />
